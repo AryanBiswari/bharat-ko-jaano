@@ -369,4 +369,8 @@ roundList.addEventListener('click', (event) => {
 // Initialize default round and questions
 showRoundQuestions(currentRoundId);
 
-
+document.addEventListener("DOMContentLoaded", function() {
+    const yearElement = document.getElementById("year");
+    const currentYear = new Date().getFullYear();
+    yearElement.textContent = currentYear;
+  });

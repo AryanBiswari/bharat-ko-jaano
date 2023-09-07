@@ -4,6 +4,9 @@ const answerText = document.getElementById('answer-text');
 const showAnsBtn = document.getElementById('show-ans-btn');
 const nextQuestionBtn = document.getElementById('next-question-btn');
 const roundList = document.getElementById('round-list');
+const copyrightSymbol = document.getElementById("copyright-symbol");
+const modal = document.getElementById("copyright-modal");
+const closeModal = document.getElementById("close-modal");
 const sidebarRounds = ['default','elimination', 'passing', 'group', 'picture', 'video', 'audio', 'fastest', 'bonus','patiance','sanskriti','rajnitii'];
 
 // Modify questions array to include 'round' property for each question
@@ -374,3 +377,25 @@ document.addEventListener("DOMContentLoaded", function() {
     const currentYear = new Date().getFullYear();
     yearElement.textContent = currentYear;
   });
+// Show the modal when the copyright symbol is clicked
+copyrightSymbol.addEventListener("click", function() {
+    modal.style.display = "block";
+});
+
+// Close the modal when the close button is clicked
+closeModal.addEventListener("click", function() {
+    modal.style.display = "none";
+});
+
+// Close the modal when clicking outside of it
+window.addEventListener("click", function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+});
+
+
+
+
+
+

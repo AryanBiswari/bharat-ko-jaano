@@ -7,7 +7,10 @@ const roundList = document.getElementById('round-list');
 const copyrightSymbol = document.getElementById("copyright-symbol");
 const modal = document.getElementById("copyright-modal");
 const closeModal = document.getElementById("close-modal");
-const sidebarRounds = ['default','elimination', 'passing', 'group', 'picture', 'video', 'audio', 'fastest', 'bonus','patiance','sanskriti','rajnitii'];
+
+
+
+const sidebarRounds = ['default','elimination', 'passing', 'group', 'picture', 'video', 'audio', 'fastest', 'box','patiance','sanskriti','rajnitii'];
 
 // Modify questions array to include 'round' property for each question
 const questions = [
@@ -290,6 +293,7 @@ const questions = [
 let currentRoundQuestions = [];
 let currentQuestionIndex = 0;
 let currentRoundId = sidebarRounds[0];
+
 // Show questions for the selected round
 function showRoundQuestions(roundId) {
     currentQuestionIndex = 0;
@@ -298,24 +302,19 @@ function showRoundQuestions(roundId) {
         showQuestion(currentQuestionIndex);
         showAnsBtn.style.display = 'block';
         nextQuestionBtn.style.display = 'block';
-        // welcomeElement.classList.add('hidden');
+        
     } else {
         questionText.textContent = 'No questions available for this round.';
         answerText.textContent = '';
         showAnsBtn.style.display = 'none';
         nextQuestionBtn.style.display = 'none';
-        // welcomeElement.classList.remove('hidden');
+        
     }
 }
 
 // Show a specific question and its answer
 function showQuestion(index) {
-    // questionText.textContent = currentRoundQuestions[index].question;
-    // answerText.textContent = currentRoundQuestions[index].answer;
-    // answerText.classList.add('hidden');
-    // showAnsBtn.textContent = 'Show Answer';
-    // const currentQuestion = currentRoundQuestions[index];
-    // questionText.textContent = currentQuestion.question;
+    
 
     const currentQuestion = currentRoundQuestions[index];
     questionText.textContent = currentQuestion.question;
@@ -393,9 +392,5 @@ window.addEventListener("click", function(event) {
         modal.style.display = "none";
     }
 });
-
-
-
-
 
 

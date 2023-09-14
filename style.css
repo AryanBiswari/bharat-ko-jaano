@@ -5,14 +5,21 @@ body, h1, h2, ul, li, p, button {
     padding: 0;
     list-style: none;
 }
+html{
+    height: 100%;
+}
 
 body {
     font-family: Arial, sans-serif;
     background-color: #e90849;
     color: #333;
-    /* display: flex;
-    flex-direction: column; */
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
 }
+main {
+    flex-grow: 1; /* Content will push the footer to the bottom */
+  }
 .footer {
     background-color: rgba(0, 0, 0, 0.2);
     padding: 24px;
@@ -64,6 +71,7 @@ nav {
   width: 250px;
   padding: 20px;
   position: absolute;
+  top: 120px;
   right: 0;
   height: 82.8vh;
 }
@@ -73,7 +81,7 @@ nav {
 }
 
 #round-list li {
-    margin-bottom: 10px;
+    margin-bottom: 30px;
     font-size: 30px;
 }
 
@@ -236,3 +244,50 @@ nav {
     font-size: 3rem;
     cursor: pointer;
 }
+
+
+
+
+
+
+
+
+@media (max-width: 1400px) {
+    nav {
+      
+      text-align: center;
+      /* padding: 10px; */
+    }
+  
+    .logo {
+        margin-right: 0px;
+      margin-bottom: 0px; /* Add spacing between logo and text */
+    }
+  
+    h1 {
+      font-size: 20px;
+    }
+  
+    p {
+      font-size: 14px;
+    }
+
+    #round-list {
+        /* margin-top: 10px; */
+        display: flex;
+        flex-direction: column;
+    }
+    #round-list li {
+        margin-bottom: 20px;
+    }
+    aside{
+        top: 118px;
+    }
+    .sidebar{
+        width: 230px;
+        height: 74.1vh;
+    }
+    .quiz-container{
+        max-width: 630px;
+    }
+  }

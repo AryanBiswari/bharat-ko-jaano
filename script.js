@@ -15,8 +15,8 @@ const sidebarRounds = ['default','elimination', 'passing', 'group', 'picture', '
 // Modify questions array to include 'round' property for each question
 const questions = [
     { round: 'default', format: 'text',  question: 'Welcome to this Quiz', answer: '' },
-    { round: 'elimination', format: 'text',  question: 'Q1 Krishna', answer: 'Radha' },
-    { round: 'elimination', format: 'text',  question: 'Q2 भारत की सबसे बड़ी आवासीय इमारत कौन सी है', answer: 'राष्ट्रपति भवन' },
+    { round: 'elimination', format: 'text',  question: 'Q1  Krishna', answer: 'Radha' },
+    { round: 'elimination', format: 'text',  question: 'Q2  भारत की सबसे बड़ी आवासीय इमारत कौन सी है', answer: 'राष्ट्रपति भवन' },
     { round: 'elimination', format: 'text',  question: 'Q3 भारत के प्रथम वित्त मंत्री कौन थे', answer: 'आर के शनमुखम चेट्टी' },
     { round: 'elimination', format: 'text',  question: 'Q4 सबसे लंबे शेड वाला प्लेटफार्म कौन सा है', answer: 'सियालदह स्टेशन का प्लेटफार्म 550 फुट शेड' },
     { round: 'elimination', format: 'text',  question: 'Q5 गुप्त साम्राज्य का विनाश किसने किया', answer: 'हूणों ने' },
@@ -304,7 +304,7 @@ function showRoundQuestions(roundId) {
         nextQuestionBtn.style.display = 'block';
         
     } else {
-        questionText.textContent = 'No questions available for this round.';
+        questionText.textContent = 'This round has been completed.';
         answerText.textContent = '';
         showAnsBtn.style.display = 'none';
         nextQuestionBtn.style.display = 'none';
@@ -348,7 +348,7 @@ nextQuestionBtn.addEventListener('click', () => {
         currentQuestionIndex++;
         showQuestion(currentQuestionIndex);
     } else {
-        questionText.textContent = 'No more questions for this round.';
+        questionText.textContent = 'This round has been completed .';
         answerText.textContent = '';
         showAnsBtn.textContent = 'Show Answer';
         answerText.classList.add('hidden');

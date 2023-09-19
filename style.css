@@ -12,11 +12,27 @@ html{
 body {
     font-family: Arial, sans-serif;
     background-color: #e90849;
+    /* background-image: url(../images/swami.jpg);
+    background-repeat: no-repeat; */
+    background-image: url('../images/swami.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
     color: #333;
     min-height: 100%;
     display: flex;
     flex-direction: column;
 }
+/* .swami-image{
+    background-image: url(../images/swami.jpg);
+    background-repeat: no-repeat;
+} */
 main {
     flex-grow: 1; /* Content will push the footer to the bottom */
   }
@@ -82,7 +98,7 @@ nav {
 
 #round-list li {
     margin-bottom: 30px;
-    font-size: 30px;
+    font-size: 25px;
 }
 
 #round-list a {
@@ -285,7 +301,7 @@ nav {
     }
     .sidebar{
         width: 230px;
-        height: 73.2vh;
+        height: 74.2vh;
     }
     .quiz-container{
         max-width: 630px;

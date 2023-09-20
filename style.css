@@ -290,6 +290,9 @@ nav {
     p {
       font-size: 14px;
     }
+    .para-header{
+        font-size: 18px;
+    }
 
     #round-list {
         /* margin-top: 10px; */

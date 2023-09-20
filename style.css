@@ -8,16 +8,19 @@ body, h1, h2, ul, li, p, button {
 html{
     height: 100%;
 }
+.para-header {
+    font-size:18px;
+}
 
 body {
     font-family: Arial, sans-serif;
     background-color: #e90849;
     /* background-image: url(../images/swami.jpg);
     background-repeat: no-repeat; */
-    background-image: url('../images/swami.jpg'); 
+    /* background-image: url('../images/swami.jpg'); 
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
     position: fixed;
     top: 0;
     left: 0;
@@ -78,7 +81,7 @@ nav {
   nav p {
     text-align: center;
     margin-top: -5px; /* Adjust this to fine-tune the spacing */
-    color: #ccc;
+    color: #fff;
   }
 
 .sidebar {

@@ -205,8 +205,11 @@ nav {
     background-color: #34495e;
     border-radius: 5px;
     padding: 5px 0;
-    width: 150px;
+    width: 160px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    overflow-y: auto;
+    max-height: 200px;
+    z-index: 1;
 }
 
 .dropdown:hover .dropdown-content {
@@ -298,6 +301,7 @@ nav {
         /* margin-top: 10px; */
         display: flex;
         flex-direction: column;
+        margin-top: 0;
     }
     #round-list li {
         margin-bottom: 20px;
@@ -311,5 +315,8 @@ nav {
     }
     .quiz-container{
         max-width: 630px;
+    }
+    .dropdown-content{
+        max-height: 150px;
     }
   }

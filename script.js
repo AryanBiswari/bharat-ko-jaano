@@ -10,7 +10,7 @@ const closeModal = document.getElementById("close-modal");
 
 
 
-const sidebarRounds = ['default','elimination', 'passing', 'group', 'picture', 'video', 'audio', 'fastest', 'box','patiance','khel','rajnitii'];
+const sidebarRounds = ['default','elimination', 'passing', 'group', 'pictureA','pictureB','pictureC','pictureD','pictureE', 'videoA','videoB','videoC','videoD','videoE', 'audioA','audioB','audioC','audioD','audioE', 'fastest', 'box','patianceA','patianceB','patianceC','patianceD','patianceE','khelA','khelB','khelC','khelD','khelE','rajnitiiA','rajnitiiB','rajnitiiC','rajnitiiD','rajnitiiE'];
 
 // Modify questions array to include 'round' property for each question
 const questions = [
@@ -136,55 +136,45 @@ const questions = [
     // { round: 'passing', format: 'audio', question: 'Allah-Duhai-Hai(PagalWorld).mp3', answer: 'Laxmi' },
     // { round: 'passing', format: 'video', question: 'video.mp4', answer: 'Parvati' },
     //patiance questions start from here
-    { round: 'patiance', format: 'text',  question: 'Q1 गुप्त साम्राज्य का विनाश किसने किया', answer: 'हूणों ने' },
-    { round: 'patiance', format: 'text',  question: 'Q2 गुप्त साम्राज्य का विनाश किसने किया', answer: 'हूणों ने' },
-    { round: 'patiance', format: 'text',  question: 'Q3 गुप्त साम्राज्य का विनाश किसने किया', answer: 'हूणों ने' },
-    { round: 'patiance', format: 'text',  question: 'Q4 गुप्त साम्राज्य का विनाश किसने किया', answer: 'हूणों ने' },
-    { round: 'patiance', format: 'text',  question: 'Q5 गुप्त साम्राज्य का विनाश किसने किया', answer: 'हूणों ने' },
-    { round: 'patiance', format: 'text',  question: 'Q6 गुप्त साम्राज्य का विनाश किसने किया', answer: 'हूणों ने' },
-    { round: 'patiance', format: 'text',  question: 'Q7 गुप्त साम्राज्य का विनाश किसने किया', answer: 'हूणों ने' },
-    { round: 'patiance', format: 'text',  question: 'Q8 गुप्त साम्राज्य का विनाश किसने किया', answer: 'हूणों ने' },
-    { round: 'patiance', format: 'text',  question: 'Q9 गुप्त साम्राज्य का विनाश किसने किया', answer: 'हूणों ने' },
-    { round: 'patiance', format: 'text',  question: 'Q10 गुप्त साम्राज्य का विनाश किसने किया', answer: 'हूणों ने' },
+    { round: 'patianceA', format: 'text',  question: 'Q1 गुप्त साम्राज्य का विनाश किसने किया', answer: 'हूणों ने' },
+    { round: 'patianceB', format: 'text',  question: 'Q2 गुप्त साम्राज्य का विनाश किसने किया', answer: 'हूणों ने' },
+    { round: 'patianceC', format: 'text',  question: 'Q3 गुप्त साम्राज्य का विनाश किसने किया', answer: 'हूणों ने' },
+    { round: 'patianceD', format: 'text',  question: 'Q4 गुप्त साम्राज्य का विनाश किसने किया', answer: 'हूणों ने' },
+    { round: 'patianceE', format: 'text',  question: 'Q5 गुप्त साम्राज्य का विनाश किसने किया', answer: 'हूणों ने' },
 
     //sanskriti questions start from here
-    { round: 'khel', format: 'text',  question: 'Q1 गुप्त साम्राज्य का विनाश किसने किया', answer: 'हूणों ने' },
-    { round: 'khel', format: 'text',  question: 'Q2 गुप्त साम्राज्य का विनाश किसने किया', answer: 'हूणों ने' },
-    { round: 'khel', format: 'text',  question: 'Q3 गुप्त साम्राज्य का विनाश किसने किया', answer: 'हूणों ने' },
-    { round: 'khel', format: 'text',  question: 'Q4 गुप्त साम्राज्य का विनाश किसने किया', answer: 'हूणों ने' },
-    { round: 'khel', format: 'text',  question: 'Q5 गुप्त साम्राज्य का विनाश किसने किया', answer: 'हूणों ने' },
+    { round: 'khelA', format: 'text',  question: 'Q1 गुप्त साम्राज्य का विनाश किसने किया', answer: 'हूणों ने' },
+    { round: 'khelB', format: 'text',  question: 'Q2 गुप्त साम्राज्य का विनाश किसने किया', answer: 'हूणों ने' },
+    { round: 'khelC', format: 'text',  question: 'Q3 गुप्त साम्राज्य का विनाश किसने किया', answer: 'हूणों ने' },
+    { round: 'khelD', format: 'text',  question: 'Q4 गुप्त साम्राज्य का विनाश किसने किया', answer: 'हूणों ने' },
+    { round: 'khelE', format: 'text',  question: 'Q5 गुप्त साम्राज्य का विनाश किसने किया', answer: 'हूणों ने' },
     //Rajniti Questions start from here
-    { round: 'rajnitii', format: 'text',  question: 'Q1 गुप्त साम्राज्य का विनाश किसने किया', answer: 'हूणों ने' },
-    { round: 'rajnitii', format: 'text',  question: 'Q2 गुप्त साम्राज्य का विनाश किसने किया', answer: 'हूणों ने' },
-    { round: 'rajnitii', format: 'text',  question: 'Q3 गुप्त साम्राज्य का विनाश किसने किया', answer: 'हूणों ने' },
-    { round: 'rajnitii', format: 'text',  question: 'Q4 गुप्त साम्राज्य का विनाश किसने किया', answer: 'हूणों ने' },
-    { round: 'rajnitii', format: 'text',  question: 'Q5 गुप्त साम्राज्य का विनाश किसने किया', answer: 'हूणों ने' },
-    { round: 'rajnitii', format: 'text',  question: 'Q6 गुप्त साम्राज्य का विनाश किसने किया', answer: 'हूणों ने' },
-    { round: 'rajnitii', format: 'text',  question: 'Q7 गुप्त साम्राज्य का विनाश किसने किया', answer: 'हूणों ने' },
-    { round: 'rajnitii', format: 'text',  question: 'Q8 गुप्त साम्राज्य का विनाश किसने किया', answer: 'हूणों ने' },
-    { round: 'rajnitii', format: 'text',  question: 'Q9 गुप्त साम्राज्य का विनाश किसने किया', answer: 'हूणों ने' },
-    { round: 'rajnitii', format: 'text',  question: 'Q10 गुप्त साम्राज्य का विनाश किसने किया', answer: 'हूणों ने' },
+    { round: 'rajnitiiA', format: 'text',  question: 'Q1 गुप्त साम्राज्य का विनाश किसने किया', answer: 'हूणों ने' },
+    { round: 'rajnitiiB', format: 'text',  question: 'Q2 गुप्त साम्राज्य का विनाश किसने किया', answer: 'हूणों ने' },
+    { round: 'rajnitiiC', format: 'text',  question: 'Q3 गुप्त साम्राज्य का विनाश किसने किया', answer: 'हूणों ने' },
+    { round: 'rajnitiiD', format: 'text',  question: 'Q4 गुप्त साम्राज्य का विनाश किसने किया', answer: 'हूणों ने' },
+    { round: 'rajnitiiE', format: 'text',  question: 'Q5 गुप्त साम्राज्य का विनाश किसने किया', answer: 'हूणों ने' },
 
     //Images Round start from here
-    { round: 'picture', format: 'image',  question: 'images/1.jpg', answer: 'Radha' },
-    { round: 'picture', format: 'image',  question: 'images/2.jpg', answer: 'Radha' },
-    { round: 'picture', format: 'image',  question: 'images/1.jpg', answer: 'Radha' },
-    { round: 'picture', format: 'image',  question: 'images/2.jpg', answer: 'Radha' },
-    { round: 'picture', format: 'image',  question: 'images/1.jpg', answer: 'Radha' },
+    { round: 'pictureA', format: 'image',  question: 'images/1.jpg', answer: 'Radha' },
+    { round: 'pictureB', format: 'image',  question: 'images/2.jpg', answer: 'Radha' },
+    { round: 'pictureC', format: 'image',  question: 'images/1.jpg', answer: 'Radha' },
+    { round: 'pictureD', format: 'image',  question: 'images/2.jpg', answer: 'Radha' },
+    { round: 'pictureE', format: 'image',  question: 'images/1.jpg', answer: 'Radha' },
 
     //Audio Round Start from here
-    { round: 'audio', format: 'audio',  question: 'audios/1.mp3', answer: 'Radha' },
-    { round: 'audio', format: 'audio',  question: 'audios/2.mp3', answer: 'Radha' },
-    { round: 'audio', format: 'audio',  question: 'audios/3.mp3', answer: 'Radha' },
-    { round: 'audio', format: 'audio',  question: 'audios/1.mp3', answer: 'Radha' },
-    { round: 'audio', format: 'audio',  question: 'audios/2.mp3', answer: 'Radha' },
+    { round: 'audioA', format: 'audio',  question: 'audios/1.mp3', answer: 'Radha' },
+    { round: 'audioB', format: 'audio',  question: 'audios/2.mp3', answer: 'Radha' },
+    { round: 'audioC', format: 'audio',  question: 'audios/3.mp3', answer: 'Radha' },
+    { round: 'audioD', format: 'audio',  question: 'audios/1.mp3', answer: 'Radha' },
+    { round: 'audioE', format: 'audio',  question: 'audios/2.mp3', answer: 'Radha' },
 
     //Video Round starts from here
-    { round: 'video', format: 'video',  question: 'videos/1.mp4', answer: 'Radha' },
-    { round: 'video', format: 'video',  question: 'videos/2.mp4', answer: 'Radha' },
-    { round: 'video', format: 'video',  question: 'videos/3.mp4', answer: 'Radha' },
-    { round: 'video', format: 'video',  question: 'videos/4.mp4', answer: 'Radha' },
-    { round: 'video', format: 'video',  question: 'videos/1.mp4', answer: 'Radha'},
+    { round: 'videoA', format: 'video',  question: 'videos/1.mp4', answer: 'Radha' },
+    { round: 'videoB', format: 'video',  question: 'videos/2.mp4', answer: 'Radha' },
+    { round: 'videoC', format: 'video',  question: 'videos/3.mp4', answer: 'Radha' },
+    { round: 'videoD', format: 'video',  question: 'videos/4.mp4', answer: 'Radha' },
+    { round: 'videoE', format: 'video',  question: 'videos/1.mp4', answer: 'Radha'},
     //Fastest fastest from here
     { round: 'fastest', format: 'text',  question: 'Q1 Krishna', answer: 'Radha' },
     { round: 'fastest', format: 'text',  question: 'Q2 भारत की सबसे बड़ी आवासीय इमारत कौन सी है', answer: 'राष्ट्रपति भवन' },

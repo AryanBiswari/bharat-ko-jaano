@@ -17,10 +17,10 @@ body {
     background-color: #e90849;
     /* background-image: url(../images/swami.jpg);
     background-repeat: no-repeat; */
-    /* background-image: url('../images/swami.jpg'); 
+    background-image: url('../images/3.jpg'); 
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat; */
+    background-repeat: no-repeat;
     position: fixed;
     top: 0;
     left: 0;
@@ -40,7 +40,7 @@ main {
     flex-grow: 1; /* Content will push the footer to the bottom */
   }
 .footer {
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.7);
     padding: 24px;
     text-align: center;
     color:  white;
@@ -60,7 +60,7 @@ video{
 }
 
 nav {
-    background-color: blue;
+    background-color: rgba(0, 0, 0, 0.8);
     color: white;
     text-align: center;
     /* padding: 10px 0; */

@@ -14,7 +14,7 @@ const sidebarRounds = ['default','elimination', 'passing', 'group', 'pictureA','
 
 // Modify questions array to include 'round' property for each question
 const questions = [
-    { round: 'default', format: 'text',  question: 'Welcome to this Quiz', answer: '' },
+    { round: 'default', format: 'text',  question: 'आपका स्वागत है', answer: '' },
     { round: 'elimination', format: 'text',  question: 'Q1  Krishna', answer: 'Radha' },
     { round: 'elimination', format: 'text',  question: 'Q2  भारत की सबसे बड़ी आवासीय इमारत कौन सी है', answer: 'राष्ट्रपति भवन' },
     { round: 'elimination', format: 'text',  question: 'Q3 भारत के प्रथम वित्त मंत्री कौन थे', answer: 'आर के शनमुखम चेट्टी' },

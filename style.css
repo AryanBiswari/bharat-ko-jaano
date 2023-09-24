@@ -14,9 +14,6 @@ html{
 
 body {
     font-family: Arial, sans-serif;
-    /* background-color: #e90849; */
-    /* background-image: url(../images/swami.jpg);
-    background-repeat: no-repeat; */
     background-image: url('images/3.jpg'); 
     background-size: cover;
     background-position: center;
@@ -32,10 +29,6 @@ body {
     display: flex;
     flex-direction: column;
 }
-/* .swami-image{
-    background-image: url(../images/swami.jpg);
-    background-repeat: no-repeat;
-} */
 main {
     flex-grow: 1; /* Content will push the footer to the bottom */
   }
@@ -97,6 +90,7 @@ nav {
 
 #round-list {
     margin-top: 10px;
+    font-weight: 600;
 }
 
 #round-list li {
@@ -139,6 +133,7 @@ nav {
 #question-text {
     text-align: center;
     font-size: 4rem;
+    /* font-weight: 600; */
 }
 
 #show-ans-btn {
@@ -180,9 +175,6 @@ nav {
 }
 
 #answer-text {
-    /* max-width: 100%;
-    height: auto;
-    margin-top: 10px; */
     margin-top: 30px;
   text-align: center;
   color: green;
@@ -202,7 +194,7 @@ nav {
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: #34495e;
+    background-color: black;
     border-radius: 5px;
     padding: 5px 0;
     width: 160px;
@@ -296,12 +288,17 @@ nav {
     .para-header{
         font-size: 18px;
     }
-
+    #question-text{
+        font-weight: 600;
+    }
+    #round-list a{
+        font-weight:600;
+    }
     #round-list {
         /* margin-top: 10px; */
         display: flex;
         flex-direction: column;
-        margin-top: 0;
+        margin-top: -14px;
     }
     #round-list li {
         margin-bottom: 20px;

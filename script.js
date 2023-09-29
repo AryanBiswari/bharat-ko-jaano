@@ -9,14 +9,13 @@ const modal = document.getElementById("copyright-modal");
 const closeModal = document.getElementById("close-modal");
 
 
-
 const sidebarRounds = ['default','elimination', 'passing', 'group', 'pictureA','pictureB','pictureC','pictureD','pictureE', 'videoA','videoB','videoC','videoD','videoE', 'audioA','audioB','audioC','audioD','audioE', 'fastest', 'box','patianceA','patianceB','patianceC','patianceD','patianceE','khelA','khelB','khelC','khelD','khelE','rajnitiiA','rajnitiiB','rajnitiiC','rajnitiiD','rajnitiiE'];
 
 // Modify questions array to include 'round' property for each question
 const questions = [
     { round: 'default', format: 'text',  question: 'आपका स्वागत है', answer: '' },
     { round: 'elimination', format: 'text',  question: 'Q1  Krishna', answer: 'Radha' },
-    { round: 'elimination', format: 'text',  question: 'Q2  भारत की सबसे बड़ी आवासीय इमारत कौन सी है', answer: 'राष्ट्रपति भवन' },
+    { round: 'elimination', format: 'text',  question: 'Q2  Bharat ka sabse bada statue kon sa hai', answer: 'statue of unity' },
     { round: 'elimination', format: 'text',  question: 'Q3 भारत के प्रथम वित्त मंत्री कौन थे', answer: 'आर के शनमुखम चेट्टी' },
     { round: 'elimination', format: 'text',  question: 'Q4 सबसे लंबे शेड वाला प्लेटफार्म कौन सा है', answer: 'सियालदह स्टेशन का प्लेटफार्म 550 फुट शेड' },
     { round: 'elimination', format: 'text',  question: 'Q5 गुप्त साम्राज्य का विनाश किसने किया', answer: 'हूणों ने' },

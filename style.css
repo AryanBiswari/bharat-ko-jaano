@@ -18,14 +18,6 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    /* position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    color: #333;
-    min-height: 100%; */
     display: flex;
     flex-direction: column;
 }
@@ -258,6 +250,33 @@ nav {
     font-size: 3rem;
     cursor: pointer;
 }
+
+
+/* Styles for modal */
+
+
+.close:hover {
+    color: #f00; /* Close button color on hover */
+}
+
+/* Add a modern overlay effect */
+.modal.active {
+    display: flex;
+    opacity: 1;
+}
+
+/* Add animation for modal appearance */
+.modal-content {
+    transform: translateY(-50px);
+    opacity: 0;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.modal.active .modal-content {
+    transform: translateY(0);
+    opacity: 1;
+}
+
 
 
 

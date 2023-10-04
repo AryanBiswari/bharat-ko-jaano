@@ -367,18 +367,21 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 // Show the modal when the copyright symbol is clicked
 copyrightSymbol.addEventListener("click", function() {
-    modal.style.display = "block";
+    // modal.style.display = "block";
+    modal.classList.add("active");
 });
 
 // Close the modal when the close button is clicked
 closeModal.addEventListener("click", function() {
-    modal.style.display = "none";
+    // modal.style.display = "none";
+    modal.classList.remove("active");
 });
 
 // Close the modal when clicking outside of it
 window.addEventListener("click", function(event) {
     if (event.target == modal) {
-        modal.style.display = "none";
+        // modal.style.display = "none";
+        modal.classList.remove("active");
     }
 });
 

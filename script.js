@@ -13,18 +13,21 @@ const sidebarRounds = [
   "elimination",
   "passing",
   "group",
+  "picture",
   "pictureA",
   "pictureB",
   "pictureC",
   "pictureD",
   "pictureE",
   "pictureF",
+  "video",
   "videoA",
   "videoB",
   "videoC",
   "videoD",
   "videoE",
   "videoF",
+  "audio",
   "audioA",
   "audioB",
   "audioC",
@@ -87,7 +90,7 @@ const questions = [
     round: "elimination",
     format: "text",
     question: "5. भारत के प्रथम शिक्षा मंत्री कौन थे ? ",
-    answer: " अबुल कलाम आजाद ",
+    answer: " अब्दुल कलाम आजाद ",
   },
 
   {
@@ -1110,114 +1113,132 @@ const questions = [
 
   //Images Round start from here
   {
-    round: "pictureA",
+    round: "picture",
     format: "image",
+    questionContent:'यह किस स्वतंत्रता संग्राम के अग्रणी क्रांतिकारी का चित्र है',
     question: "images/1.jpeg",
     answer: "वीर बैरागी बंदा बहादुर",
   },
   {
-    round: "pictureB",
+    round: "picture",
     format: "image",
+    questionContent:'दिखाए गए चित्र में इस व्यक्ति को पहचानिए जिसने भारत का पहला उल्टा नक्शा बनाया था',
     question: "images/2.jpeg",
     answer: "अल इदरीसी",
   },
   {
-    round: "pictureC",
+    round: "picture",
     format: "image",
+    questionContent:'My name is Aryan',
     question: "images/4.jpeg",
     answer: "सचिन तेंदुलकर",
   },
   {
-    round: "pictureD",
+    round: "picture",
     format: "image",
+    questionContent:'My name is Aryan',
     question: "images/5.jpeg",
     answer: "कोणार्क",
   },
   {
-    round: "pictureE",
+    round: "picture",
     format: "image",
+    questionContent:'My name is Aryan',
     question: "images/6.jpeg",
     answer: "डॉ होमी जहांगीर भाभा",
   },
   {
-    round: "pictureF",
+    round: "picture",
     format: "image",
+    questionContent:'My name is Aryan',
     question: "images/7.jpeg",
     answer: "डॉ विक्रम साराभाई",
   },
 
   //Audio Round Start from here
   {
-    round: "audioA",
+    round: "audio",
     format: "audio",
+    questionContent:'My name is Aryan',
     question: "audios/1.mpeg",
     answer: "ए.पी.जे.अब्दुल कलाम",
   },
   {
-    round: "audioB",
+    round: "audio",
     format: "audio",
+    questionContent:'My name is Aryan',
     question: "audios/2.mpeg",
     answer: "केशरी",
   },
   {
-    round: "audioC",
+    round: "audio",
     format: "audio",
+    questionContent:'My name is Aryan',
     question: "audios/3.mpeg",
     answer: "मुन्ना भाई एमबीबीएस",
   },
   {
-    round: "audioD",
+    round: "audio",
     format: "audio",
+    questionContent:'My name is Aryan',
     question: "audios/4.mpeg",
     answer: "अटल बिहारी वाजपेई जी",
   },
   {
-    round: "audioE",
+    round: "audio",
     format: "audio",
+    questionContent:'My name is Aryan',
     question: "audios/5.mpeg",
     answer: "सौदागर",
   },
   {
-    round: "audioF",
+    round: "audio",
     format: "audio",
+    questionContent:'My name is Aryan',
     question: "audios/6.mpeg",
     answer: "नवाजुद्दीन सिद्दीकी",
   },
 
   //Video Round starts from here
   {
-    round: "videoA",
+    round: "video",
     format: "video",
+    questionContent:'SET-A यह भारत की किस प्रसिद्ध आई.ए.एस.का भाषण है',
     question: "videos/1.mp4",
     answer: "टीना डाबी",
   },
   {
-    round: "videoB",
+    round: "video",
     format: "video",
+    questionContent:'SET-B यह भारत की पहली चलचित्र है ,इसका नाम बताइए',
     question: "videos/3.mp4",
     answer: "राजा हरिश्चंद्र",
   },
   {
-    round: "videoC",
+    round: "video",
     format: "video",
+    questionContent:'SET-C यह भारत के एक प्रसिद्ध शहनाई वादक का वीडियो है , उनका नाम बताइए',
     question: "videos/2.mp4",
     answer: "उस्ताद बिस्मिल्लाह खान",
   },
   {
-    round: "videoD",
+    round: "video",
     format: "video",
+    questionContent:'SET-D My name is Aryan',
     question: "videos/4.mp4",
     answer: "लाल बहादुर शास्त्री",
   },
   {
-    round: "videoE",
+    round: "video",
     format: "video",
+    questionContent:'SET-E My name is Aryan',
     question: "videos/kathak.mp4",
     answer: "कत्थक",
   },
   {
-    round: "videoF",
+    round: "video",
     format: "video",
+    questionContent:'SET-F My name is Aryan',
     question: "videos/5.mp4",
     answer: "शिल्पकला",
   },
@@ -1853,11 +1874,11 @@ function showQuestion(index) {
   questionText.textContent = currentQuestion.question;
 
   if (currentQuestion.format === "image") {
-    questionText.innerHTML = `<img src="${currentQuestion.question}" alt="Question Image">`;
+    questionText.innerHTML = `<p class="questionPara">${currentQuestion.questionContent}</p><img src="${currentQuestion.question}" alt="Question Image">`;
   } else if (currentQuestion.format === "audio") {
-    questionText.innerHTML = `<audio controls><source src="${currentQuestion.question}" type="audio/mp3">Your browser does not support the audio element.</audio>`;
+    questionText.innerHTML = `<p class="questionPara">${currentQuestion.questionContent}</p><audio controls><source src="${currentQuestion.question}" type="audio/mp3">Your browser does not support the audio element.</audio>`;
   } else if (currentQuestion.format === "video") {
-    questionText.innerHTML = `<video controls><source src="${currentQuestion.question}" type="video/mp4">Your browser does not support the video element.</video>`;
+    questionText.innerHTML = `<p class="questionPara">${currentQuestion.questionContent}</p><video controls><source src="${currentQuestion.question}" type="video/mp4">Your browser does not support the video element.</video>`;
   }
 
   answerText.textContent = currentQuestion.answer;

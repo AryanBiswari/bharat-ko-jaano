@@ -70,7 +70,7 @@ nav {
   }
 
 .sidebar {
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.7);
   color: white;
   width: 250px;
   padding: 20px;
@@ -167,7 +167,7 @@ nav {
 }
 
 #answer-text {
-    margin-top: 30px;
+    /* margin-top: 30px; */
   text-align: center;
   color: green;
   font-weight: 900;
@@ -290,8 +290,11 @@ nav {
       
       text-align: center;
       /* padding: 10px; */
+      height: 6.5rem;
     }
-  
+    nav .logo{
+        height: 6rem;
+    }
     .logo {
         margin-right: 0px;
       margin-bottom: 0px; /* Add spacing between logo and text */
@@ -304,10 +307,14 @@ nav {
     p {
       font-size: 14px;
     }
+    p img{
+        height: 15rem;
+    }
     .para-header{
         font-size: 18px;
     }
     #question-text{
+        font-size: 3rem;
         font-weight: 600;
     }
     #round-list a{
@@ -327,12 +334,16 @@ nav {
     }
     .sidebar{
         width: 230px;
-        height: 74.2vh;
+        height: 77.2vh;
+        top: 100px;
     }
     .quiz-container{
         max-width: 630px;
     }
     .dropdown-content{
         max-height: 150px;
+    }
+    .questionPara{
+        font-size: 25px;
     }
   }

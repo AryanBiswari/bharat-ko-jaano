@@ -765,369 +765,225 @@ const questions = [
     question: "100. इन्दिरा गांधी पहली बार कांग्रेस अध्‍यक्ष कब बनी थीं ? ",
     answer: " 1960",
   },
-  // { round: 'elimination', format: 'image',  question: 'image.jpg', answer: 'Sita' },
-  // ... other questions ...
   //Passing Questions start from here
-//   { round: "passing", format: "text", question: "Q1 Krishna", answer: "Radha" },
-//   {
-//     round: "passing",
-//     format: "text",
-//     question: "Q2 भारत की सबसे बड़ी आवासीय इमारत कौन सी है",
-//     answer: "राष्ट्रपति भवन",
-//   },
-//   {
-//     round: "passing",
-//     format: "text",
-//     question: "Q3 भारत के प्रथम वित्त मंत्री कौन थे",
-//     answer: "आर के शनमुखम चेट्टी",
-//   },
-//   {
-//     round: "passing",
-//     format: "text",
-//     question: "Q4 सबसे लंबे शेड वाला प्लेटफार्म कौन सा है",
-//     answer: "सियालदह स्टेशन का प्लेटफार्म 550 फुट शेड",
-//   },
-//   {
-//     round: "passing",
-//     format: "text",
-//     question: "Q5 गुप्त साम्राज्य का विनाश किसने किया",
-//     answer: "हूणों ने",
-//   },
-//   { round: "passing", format: "text", question: "Q6 Krishna", answer: "Radha" },
-//   {
-//     round: "passing",
-//     format: "text",
-//     question: "Q7 भारत की सबसे बड़ी आवासीय इमारत कौन सी है",
-//     answer: "राष्ट्रपति भवन",
-//   },
-//   {
-//     round: "passing",
-//     format: "text",
-//     question: "Q8 भारत के प्रथम वित्त मंत्री कौन थे",
-//     answer: "आर के शनमुखम चेट्टी",
-//   },
-//   {
-//     round: "passing",
-//     format: "text",
-//     question: "Q9 सबसे लंबे शेड वाला प्लेटफार्म कौन सा है",
-//     answer: "सियालदह स्टेशन का प्लेटफार्म 550 फुट शेड",
-//   },
-//   {
-//     round: "passing",
-//     format: "text",
-//     question: "Q10 गुप्त साम्राज्य का विनाश किसने किया",
-//     answer: "हूणों ने",
-//   },
-//   {
-//     round: "passing",
-//     format: "text",
-//     question: "Q11 Krishna",
-//     answer: "Radha",
-//   },
-//   {
-//     round: "passing",
-//     format: "text",
-//     question: "Q12 भारत की सबसे बड़ी आवासीय इमारत कौन सी है",
-//     answer: "राष्ट्रपति भवन",
-//   },
-//   {
-//     round: "passing",
-//     format: "text",
-//     question: "Q13 भारत के प्रथम वित्त मंत्री कौन थे",
-//     answer: "आर के शनमुखम चेट्टी",
-//   },
-//   {
-//     round: "passing",
-//     format: "text",
-//     question: "Q14 सबसे लंबे शेड वाला प्लेटफार्म कौन सा है",
-//     answer: "सियालदह स्टेशन का प्लेटफार्म 550 फुट शेड",
-//   },
-//   {
-//     round: "passing",
-//     format: "text",
-//     question: "Q15 गुप्त साम्राज्य का विनाश किसने किया",
-//     answer: "हूणों ने",
-//   },
-//   {
-//     round: "passing",
-//     format: "text",
-//     question: "Q16 Krishna",
-//     answer: "Radha",
-//   },
-//   {
-//     round: "passing",
-//     format: "text",
-//     question: "Q17 भारत की सबसे बड़ी आवासीय इमारत कौन सी है",
-//     answer: "राष्ट्रपति भवन",
-//   },
-//   {
-//     round: "passing",
-//     format: "text",
-//     question: "Q18 भारत के प्रथम वित्त मंत्री कौन थे",
-//     answer: "आर के शनमुखम चेट्टी",
-//   },
-//   {
-//     round: "passing",
-//     format: "text",
-//     question: "Q19 सबसे लंबे शेड वाला प्लेटफार्म कौन सा है",
-//     answer: "सियालदह स्टेशन का प्लेटफार्म 550 फुट शेड",
-//   },
-//   {
-//     round: "passing",
-//     format: "text",
-//     question: "Q20 गुप्त साम्राज्य का विनाश किसने किया",
-//     answer: "हूणों ने",
-//   },
-//   {
-//     round: "passing",
-//     format: "text",
-//     question: "Q21 Krishna",
-//     answer: "Radha",
-//   },
-//   {
-//     round: "passing",
-//     format: "text",
-//     question: "Q22 भारत की सबसे बड़ी आवासीय इमारत कौन सी है",
-//     answer: "राष्ट्रपति भवन",
-//   },
-//   {
-//     round: "passing",
-//     format: "text",
-//     question: "Q23 भारत के प्रथम वित्त मंत्री कौन थे",
-//     answer: "आर के शनमुखम चेट्टी",
-//   },
-//   {
-//     round: "passing",
-//     format: "text",
-//     question: "Q24 सबसे लंबे शेड वाला प्लेटफार्म कौन सा है",
-//     answer: "सियालदह स्टेशन का प्लेटफार्म 550 फुट शेड",
-//   },
-//   {
-//     round: "passing",
-//     format: "text",
-//     question: "Q25 गुप्त साम्राज्य का विनाश किसने किया",
-//     answer: "हूणों ने",
-//   },
-
 {
     round: "passing",
     format: "text",
-    question: "भारतीय मूल की प्रथम महिला अंतरिक्ष यात्री ",
+    question: "1. भारतीय मूल की प्रथम महिला अंतरिक्ष यात्री ",
     answer: " कल्‍पना चावला ",
   },
   {
     round: "passing",
     format: "text",
-    question: "सबसे बड़ा प्रदर्शन स्‍थल  ? ",
+    question: "2. सबसे बड़ा प्रदर्शन स्‍थल  ? ",
     answer: " प्रगति मैदान दिल्‍ली ",
   },
   {
     round: "passing",
     format: "text",
-    question: "मोहद जोदड़ो कहां स्थित है ? ",
+    question: "3. मोहद जोदड़ो कहां स्थित है ? ",
     answer: " लरकाना (सिंध पाकिस्‍तान) ",
   },
   {
     round: "passing",
     format: "text",
-    question: "वन्‍दे मातरम् व कर्मयोगी अखबारों का प्रकाशन किसने किया ? ",
+    question: "4. वन्‍दे मातरम् व कर्मयोगी अखबारों का प्रकाशन किसने किया ? ",
     answer: " महर्षि अरविन्‍द घोष ",
   },
   {
     round: "passing",
     format: "text",
-    question: "भारत छोड़ो आन्‍दोलन कहां से प्रारंभ हुआ ? ",
+    question: "5. भारत छोड़ो आन्‍दोलन कहां से प्रारंभ हुआ ? ",
     answer: " बम्‍बई ",
   },
   {
     round: "passing",
     format: "text",
-    question: "महाराणा प्रताप के पुत्र का नाम जिन्‍होंने मुगलों से संधी की ? ",
+    question: "6. महाराणा प्रताप के पुत्र का नाम जिन्‍होंने मुगलों से संधी की ? ",
     answer: " अमर सिंह ",
   },
   {
     round: "passing",
     format: "text",
     question:
-      "14 वीं शताब्‍दी में रामानंद के शिष्‍य निर्गुण ब्रम्‍ह के उपासक ? ",
+      "7. 14 वीं शताब्‍दी में रामानंद के शिष्‍य निर्गुण ब्रम्‍ह के उपासक ? ",
     answer: " कबीर ",
   },
   {
     round: "passing",
     format: "text",
-    question: "भारतीय संविधान के कुल कितने भाग हैं ? ",
+    question: "8. भारतीय संविधान के कुल कितने भाग हैं ? ",
     answer: " 22 ",
   },
   {
     round: "passing",
     format: "text",
-    question: "पूर्व का द्वार किस प्रदेश को कहा जाता है ? ",
+    question: "9. पूर्व का द्वार किस प्रदेश को कहा जाता है ? ",
     answer: " असम ",
   },
   {
     round: "passing",
     format: "text",
-    question: "मिजोरम में सबसे ऊंची चोटी का क्‍या नाम है ? ",
+    question: "10. मिजोरम में सबसे ऊंची चोटी का क्‍या नाम है ? ",
     answer: " फानपुई (नीला पर्वत) ",
   },
   {
     round: "passing",
     format: "text",
-    question: "भारत का मानक समय ग्रीनविच समय से कितना आगे है ? ",
+    question: "11. भारत का मानक समय ग्रीनविच समय से कितना आगे है ? ",
     answer: " 5 घण्‍टे 30 मिनट ",
   },
   {
     round: "passing",
     format: "text",
-    question: "सबसे अधिक जनजाती किस राज्‍य में है ? ",
+    question: "12. सबसे अधिक जनजाती किस राज्‍य में है ? ",
     answer: " मध्‍यप्रदेश ",
   },
   {
     round: "passing",
     format: "text",
-    question: "उज्‍जैन किस नदी के तट पर है ? ",
+    question: "13. उज्‍जैन किस नदी के तट पर है ? ",
     answer: " शिप्रा ",
   },
   {
     round: "passing",
     format: "text",
-    question: "सूरत किस नदी के किनारे स्थित है ? ",
+    question: "14. सूरत किस नदी के किनारे स्थित है ? ",
     answer: " ताप्‍ती ",
   },
   {
     round: "passing",
     format: "text",
-    question: "एल्‍यूमीनियम अयस्‍क बॉक्‍साइट का उत्‍पादक राज्‍य ? ",
+    question: "15. एल्‍यूमीनियम अयस्‍क बॉक्‍साइट का उत्‍पादक राज्‍य ? ",
     answer: " आंध्रप्रदेश, ओड़ीसा ",
   },
   {
     round: "passing",
     format: "text",
-    question: "भाषा एटोमिक रिसर्च सेंटर कहां स्थित है ? ",
+    question: "16. भाषा एटोमिक रिसर्च सेंटर कहां स्थित है ? ",
     answer: " ट्राम्‍बे (महाराष्‍ट्र) ",
   },
   {
     round: "passing",
     format: "text",
-    question: "फरक्‍का परियोजना किस नदी पर संचालित है ? ",
+    question: "17. फरक्‍का परियोजना किस नदी पर संचालित है ? ",
     answer: " गंगा नदी ",
   },
   {
     round: "passing",
     format: "text",
-    question: "माला प्रभा परियोजना किस प्रदेश में संचालित है ? ",
+    question: "18. माला प्रभा परियोजना किस प्रदेश में संचालित है ? ",
     answer: " कर्नाटक ",
   },
   {
     round: "passing",
     format: "text",
-    question: "भारत में संपूर्ण स्‍वदेशी बैंक कब स्‍थापित हुआ ? ",
+    question: "19. भारत में संपूर्ण स्‍वदेशी बैंक कब स्‍थापित हुआ ? ",
     answer: " 1894 ",
   },
   {
     round: "passing",
     format: "text",
-    question: "कौन सी पंचवर्षीय योजना में विकास दर सर्वाधिक रही ? ",
+    question: "20. कौन सी पंचवर्षीय योजना में विकास दर सर्वाधिक रही ? ",
     answer: " 11 वीं ",
   },
   {
     round: "passing",
     format: "text",
     question:
-      "भारत में 1 जुलाई 2017 से प्रारंभ किए जाने वाले अप्रत्‍यक्ष कर का नाम ? ",
+      "21. भारत में 1 जुलाई 2017 से प्रारंभ किए जाने वाले अप्रत्‍यक्ष कर का नाम ? ",
     answer: " जी. एस. टी. ",
   },
   {
     round: "passing",
     format: "text",
-    question: "नारियल उत्‍पादन में भारत का कौन सा स्‍थान है ? ",
+    question: "22. नारियल उत्‍पादन में भारत का कौन सा स्‍थान है ? ",
     answer: " प्रथम ",
   },
   {
     round: "passing",
     format: "text",
-    question: "शल्‍व सूत्र के प्रारंभिक रचियता कौन थे ? ",
+    question: "23. शल्‍व सूत्र के प्रारंभिक रचियता कौन थे ? ",
     answer: " बौद्धायन ",
   },
   {
     round: "passing",
     format: "text",
     question:
-      "धरती के गोल होने के व घूमने की बात किस भारतीय वैज्ञानिक ने की ? ",
+      "24. धरती के गोल होने के व घूमने की बात किस भारतीय वैज्ञानिक ने की ? ",
     answer: " आर्यभट्ट ",
   },
   {
     round: "passing",
     format: "text",
-    question: "रोहिणी RS ",
-    answer: " 1 कब प्रक्षिपित किया गया ? ",
+    question: "25. रोहिणी RS – 1 कब प्रक्षिपित किया गया",
     answer: " 18 जुलाई 1981 ",
   },
   {
     round: "passing",
     format: "text",
-    question: "भगवान विष्‍णु के कुल कितने अवतार माने गए हैं ? ",
+    question: "26. भगवान विष्‍णु के कुल कितने अवतार माने गए हैं ? ",
     answer: " 24 ",
   },
   {
     round: "passing",
     format: "text",
-    question: "सूर्य से उत्‍पन्‍न देवताओं के वैद्य कौन हैं ? ",
+    question: "27. सूर्य से उत्‍पन्‍न देवताओं के वैद्य कौन हैं ? ",
     answer: " अश्विनी कुमार ",
   },
   {
     round: "passing",
     format: "text",
     question:
-      "नवरात्रों में छठवें दिन किस माता के किस रूप की पूजा की जाती है ? ",
+      "28. नवरात्रों में छठवें दिन किस माता के किस रूप की पूजा की जाती है ? ",
     answer: " कात्‍यायनी ",
   },
   {
     round: "passing",
     format: "text",
-    question: "शंकराचार्य का स्‍वर्गवास किस आयु में हुआ ? ",
+    question: "29. शंकराचार्य का स्‍वर्गवास किस आयु में हुआ ? ",
     answer: " 32 वर्ष ",
   },
   {
     round: "passing",
     format: "text",
-    question: "अकाल तख्‍त का निर्माण किसने करवाया था ? ",
+    question: "30. अकाल तख्‍त का निर्माण किसने करवाया था ? ",
     answer: " गुरु गोविंद ",
   },
   {
     round: "passing",
     format: "text",
-    question: "सगर के पुत्रों का उद्धार कैसे हुआ ? ",
+    question: "31. सगर के पुत्रों का उद्धार कैसे हुआ ? ",
     answer: " स्‍वर्ग से गंगा लाकर उसके जल से ",
   },
   {
     round: "passing",
     format: "text",
-    question: "कैकेमी के पिता का नाम ? ",
+    question: "32. कैकेमी के पिता का नाम ? ",
     answer: " अश्‍वपति ",
   },
   {
     round: "passing",
     format: "text",
-    question: "सुग्रीव व राम की भेंट सर्वप्रथम कहां हुई ? ",
+    question: "33. सुग्रीव व राम की भेंट सर्वप्रथम कहां हुई ? ",
     answer: " ऋष्‍यमूक पर्वत ",
   },
   {
     round: "passing",
     format: "text",
-    question: "कुबेर के पुत्र का नाम ? ",
+    question: "34. कुबेर के पुत्र का नाम ? ",
     answer: " नल कुबेर ",
   },
   {
     round: "passing",
     format: "text",
-    question: "विदुर नीति का वर्णन किस पर्व में है ? ",
+    question: "35. विदुर नीति का वर्णन किस पर्व में है ? ",
     answer: " उद्योग पर्व में ",
   },
   {
     round: "passing",
     format: "text",
-    question: "भगवत गीता किस ग्रन्‍थ का भाग है ? ",
+    question: "36. भगवत गीता किस ग्रन्‍थ का भाग है ? ",
     answer: " महाभारत ",
   },
   // { round: 'passing', format: 'audio', question: 'Allah-Duhai-Hai(PagalWorld).mp3', answer: 'Laxmi' },
@@ -1300,26 +1156,32 @@ const questions = [
   {
     round: "audioB",
     format: "audio",
-    question: "audios/2.mp3",
-    answer: "Radha",
+    question: "audios/2.mpeg",
+    answer: "केशरी",
   },
   {
     round: "audioC",
     format: "audio",
-    question: "audios/3.mp3",
-    answer: "Radha",
+    question: "audios/3.mpeg",
+    answer: "मुन्ना भाई एमबीबीएस",
   },
   {
     round: "audioD",
     format: "audio",
-    question: "audios/1.mp3",
-    answer: "Radha",
+    question: "audios/4.mpeg",
+    answer: "अटल बिहारी वाजपेई जी",
   },
   {
     round: "audioE",
     format: "audio",
-    question: "audios/2.mp3",
-    answer: "Radha",
+    question: "audios/5.mpeg",
+    answer: "सौदागर",
+  },
+  {
+    round: "audioF",
+    format: "audio",
+    question: "audios/6.mpeg",
+    answer: "नवाजुद्दीन सिद्दीकी",
   },
 
   //Video Round starts from here
@@ -1350,14 +1212,14 @@ const questions = [
   {
     round: "videoE",
     format: "video",
-    question: "videos/5.mp4",
-    answer: "Radha",
+    question: "videos/kathak.mp4",
+    answer: "कत्थक",
   },
   {
     round: "videoF",
     format: "video",
-    question: "videos/1.mp4",
-    answer: "Radha",
+    question: "videos/5.mp4",
+    answer: "शिल्पकला",
   },
   //Fastest fastest from here
   {
@@ -2043,27 +1905,27 @@ roundList.addEventListener("click", (event) => {
 // Initialize default round and questions
 showRoundQuestions(currentRoundId);
 
-document.addEventListener("DOMContentLoaded", function () {
-  const yearElement = document.getElementById("year");
-  const currentYear = new Date().getFullYear();
-  yearElement.textContent = currentYear;
-});
-// Show the modal when the copyright symbol is clicked
-copyrightSymbol.addEventListener("click", function () {
-  // modal.style.display = "block";
-  modal.classList.add("active");
-});
+// document.addEventListener("DOMContentLoaded", function () {
+//   const yearElement = document.getElementById("year");
+//   const currentYear = new Date().getFullYear();
+//   yearElement.textContent = currentYear;
+// });
+// // Show the modal when the copyright symbol is clicked
+// copyrightSymbol.addEventListener("click", function () {
+//   // modal.style.display = "block";
+//   modal.classList.add("active");
+// });
 
-// Close the modal when the close button is clicked
-closeModal.addEventListener("click", function () {
-  // modal.style.display = "none";
-  modal.classList.remove("active");
-});
+// // Close the modal when the close button is clicked
+// closeModal.addEventListener("click", function () {
+//   // modal.style.display = "none";
+//   modal.classList.remove("active");
+// });
 
-// Close the modal when clicking outside of it
-window.addEventListener("click", function (event) {
-  if (event.target == modal) {
-    // modal.style.display = "none";
-    modal.classList.remove("active");
-  }
-});
+// // Close the modal when clicking outside of it
+// window.addEventListener("click", function (event) {
+//   if (event.target == modal) {
+//     // modal.style.display = "none";
+//     modal.classList.remove("active");
+//   }
+// });

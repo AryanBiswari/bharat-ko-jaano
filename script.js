@@ -1147,13 +1147,13 @@ const questions = [
     question: "images/8.jpeg",
     answer: "G-20",
   },
-  {
-    round: "picture",
-    format: "image",
-    questionContent:'SET-F My name is Aryan',
-    question: "images/6.jpeg",
-    answer: "डॉ होमी जहांगीर भाभा",
-  },
+  // {
+  //   round: "picture",
+  //   format: "image",
+  //   questionContent:'SET-F My name is Aryan',
+  //   question: "images/6.jpeg",
+  //   answer: "डॉ होमी जहांगीर भाभा",
+  // },
   
 
   //Audio Round Start from here
@@ -1192,13 +1192,13 @@ const questions = [
     question: "audios/5.mpeg",
     answer: "सौदागर",
   },
-  {
-    round: "audio",
-    format: "audio",
-    questionContent:'SET-F My name is Aryan',
-    question: "audios/6.mpeg",
-    answer: "नवाजुद्दीन सिद्दीकी",
-  },
+  // {
+  //   round: "audio",
+  //   format: "audio",
+  //   questionContent:'SET-F My name is Aryan',
+  //   question: "audios/6.mpeg",
+  //   answer: "नवाजुद्दीन सिद्दीकी",
+  // },
 
   //Video Round starts from here
   {
@@ -1236,13 +1236,13 @@ const questions = [
     question: "videos/kathak.mp4",
     answer: "कत्थक",
   },
-  {
-    round: "video",
-    format: "video",
-    questionContent:'SET-F My name is Aryan',
-    question: "videos/5.mp4",
-    answer: "शिल्पकला",
-  },
+  // {
+  //   round: "video",
+  //   format: "video",
+  //   questionContent:'SET-F My name is Aryan',
+  //   question: "videos/5.mp4",
+  //   answer: "शिल्पकला",
+  // },
   //Fastest fastest from here
   {
     round: "fastest",

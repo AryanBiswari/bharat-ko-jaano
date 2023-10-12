@@ -111,7 +111,7 @@ const questions = [
     round: "elimination",
     format: "text",
     question:
-      "8. नोबेल पुरस्‍कार प्रापत करने वाले प्रथम भारतीय वैज्ञानिक कौन थे ? ",
+      "8. नोबेल पुरस्‍कार प्राप्त करने वाले प्रथम भारतीय वैज्ञानिक कौन थे ? ",
     answer: " सी. व्‍ही. रमन ",
   },
 
@@ -1115,86 +1115,87 @@ const questions = [
   {
     round: "picture",
     format: "image",
-    questionContent:'यह किस स्वतंत्रता संग्राम के अग्रणी क्रांतिकारी का चित्र है',
+    questionContent:'SET-A यह किस स्वतंत्रता संग्राम के अग्रणी क्रांतिकारी का चित्र है',
     question: "images/1.jpeg",
     answer: "वीर बैरागी बंदा बहादुर",
   },
   {
     round: "picture",
     format: "image",
-    questionContent:'दिखाए गए चित्र में इस व्यक्ति को पहचानिए जिसने भारत का पहला उल्टा नक्शा बनाया था',
+    questionContent:'SET-B दिखाए गए चित्र में इस व्यक्ति को पहचानिए जिसने भारत का पहला उल्टा नक्शा बनाया था',
     question: "images/2.jpeg",
     answer: "अल इदरीसी",
   },
   {
     round: "picture",
     format: "image",
-    questionContent:'My name is Aryan',
-    question: "images/4.jpeg",
+    questionContent:'SET-C यह किस खिलाड़ी का चित्र है',
+    question: "images/3.jpg",
     answer: "सचिन तेंदुलकर",
   },
   {
     round: "picture",
     format: "image",
-    questionContent:'My name is Aryan',
+    questionContent:'SET-D यह भारत की कौन सी विरासत स्थल है',
     question: "images/5.jpeg",
     answer: "कोणार्क",
   },
   {
     round: "picture",
     format: "image",
-    questionContent:'My name is Aryan',
-    question: "images/6.jpeg",
-    answer: "डॉ होमी जहांगीर भाभा",
+    questionContent:'SET-E यह भारत में हाल ही में हुई किस चर्चा का नारा था',
+    question: "images/8.jpeg",
+    answer: "G-20",
   },
   {
     round: "picture",
     format: "image",
-    questionContent:'My name is Aryan',
-    question: "images/7.jpeg",
-    answer: "डॉ विक्रम साराभाई",
+    questionContent:'SET-F My name is Aryan',
+    question: "images/6.jpeg",
+    answer: "डॉ होमी जहांगीर भाभा",
   },
+  
 
   //Audio Round Start from here
   {
     round: "audio",
     format: "audio",
-    questionContent:'My name is Aryan',
+    questionContent:'SET-A My name is Aryan',
     question: "audios/1.mpeg",
     answer: "ए.पी.जे.अब्दुल कलाम",
   },
   {
     round: "audio",
     format: "audio",
-    questionContent:'My name is Aryan',
+    questionContent:'SET-B My name is Aryan',
     question: "audios/2.mpeg",
     answer: "केशरी",
   },
   {
     round: "audio",
     format: "audio",
-    questionContent:'My name is Aryan',
+    questionContent:'SET-C My name is Aryan',
     question: "audios/3.mpeg",
     answer: "मुन्ना भाई एमबीबीएस",
   },
   {
     round: "audio",
     format: "audio",
-    questionContent:'My name is Aryan',
+    questionContent:'SET-D My name is Aryan',
     question: "audios/4.mpeg",
     answer: "अटल बिहारी वाजपेई जी",
   },
   {
     round: "audio",
     format: "audio",
-    questionContent:'My name is Aryan',
+    questionContent:'SET-E My name is Aryan',
     question: "audios/5.mpeg",
     answer: "सौदागर",
   },
   {
     round: "audio",
     format: "audio",
-    questionContent:'My name is Aryan',
+    questionContent:'SET-F My name is Aryan',
     question: "audios/6.mpeg",
     answer: "नवाजुद्दीन सिद्दीकी",
   },
@@ -1224,7 +1225,7 @@ const questions = [
   {
     round: "video",
     format: "video",
-    questionContent:'SET-D My name is Aryan',
+    questionContent:'SET-D दिखाए गए वीडियो में भारत के किस प्रशिध् राजनेता का भाषड् हैं',
     question: "videos/4.mp4",
     answer: "लाल बहादुर शास्त्री",
   },
@@ -1878,7 +1879,7 @@ function showQuestion(index) {
   } else if (currentQuestion.format === "audio") {
     questionText.innerHTML = `<p class="questionPara">${currentQuestion.questionContent}</p><audio controls><source src="${currentQuestion.question}" type="audio/mp3">Your browser does not support the audio element.</audio>`;
   } else if (currentQuestion.format === "video") {
-    questionText.innerHTML = `<p class="questionPara">${currentQuestion.questionContent}</p><video controls><source src="${currentQuestion.question}" type="video/mp4">Your browser does not support the video element.</video>`;
+    questionText.innerHTML = `<p class="questionPara">${currentQuestion.questionContent}</p><video controls poster="images/poster.jpg"><source src="${currentQuestion.question}" type="video/mp4">Your browser does not support the video element.</video>`;
   }
 
   answerText.textContent = currentQuestion.answer;

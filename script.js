@@ -1912,6 +1912,25 @@ nextQuestionBtn.addEventListener("click", () => {
   }
 });
 
+document.addEventListener("keydown", function (event) {
+  // Right arrow key
+  if (event.key === "ArrowRight") {
+    if (currentQuestionIndex < currentRoundQuestions.length - 1) {
+      currentQuestionIndex++;
+      showQuestion(currentQuestionIndex);
+    } else {
+      questionText.textContent = "This round has been completed.";
+      answerText.textContent = "";
+      showAnsBtn.textContent = "Show Answer";
+      answerText.classList.add("hidden");
+    }
+  }
+  // Left arrow key
+  else if (event.key === "ArrowLeft") {
+    showAnswer();
+  }
+});
+
 // Event listener for round selection in the sidebar
 roundList.addEventListener("click", (event) => {
   const target = event.target;
@@ -1927,6 +1946,8 @@ roundList.addEventListener("click", (event) => {
 
 // Initialize default round and questions
 showRoundQuestions(currentRoundId);
+
+
 
 // document.addEventListener("DOMContentLoaded", function () {
 //   const yearElement = document.getElementById("year");

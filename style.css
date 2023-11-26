@@ -44,6 +44,14 @@ video{
     margin: 0 auto;
     padding: 20px;
 }
+.navbar {
+    height: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: rgba(0, 0, 0, 0.8); /* Add your preferred background color */ /* Add padding as needed */
+    color: white; /* Add your preferred text color */
+}
 
 nav {
     background-color: rgba(0, 0, 0, 0.8);
@@ -82,12 +90,13 @@ nav {
 }
 
 #round-list {
-    margin-top: 10px;
+    display: flex;
     font-weight: 600;
 }
 
 #round-list li {
-    margin-bottom: 30px;
+    padding-right: 2rem;
+    margin: auto;
     font-size: 25px;
 }
 
@@ -113,7 +122,7 @@ nav {
 
 .quiz-container {
     width: 100%;
-    max-width: 800px;
+    /* max-width: 800px; */
     background-color: white;
     padding: 20px;
     border-radius: 10px;
@@ -125,8 +134,8 @@ nav {
 }
 #question-text {
     text-align: center;
-    font-size: 4rem;
-    /* font-weight: 600; */
+    font-size: 3rem;
+    font-weight: 600;
 }
 
 #show-ans-btn {
@@ -317,26 +326,19 @@ nav {
     #round-list a{
         font-weight:600;
     }
-    #round-list {
-        /* margin-top: 10px; */
-        display: flex;
-        flex-direction: column;
-        margin-top: -14px;
-    }
     #round-list li {
-        margin-bottom: 20px;
+        margin: auto;
+    font-size: 20px;
     }
-    aside{
+    /* aside{
         top: 118px;
-    }
-    .sidebar{
+    } */
+    /* .sidebar{
         width: 188px;
         height: 77.2vh;
         top: 100px;
-    }
-    .quiz-container{
-        max-width: 630px;
-    }
+    } */
+    
     .dropdown-content{
         max-height: 150px;
     }

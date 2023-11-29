@@ -55,6 +55,14 @@ const sidebarRounds = [
   "rajnitiiE",
   "rajnitiiF",
 ];
+document.addEventListener("DOMContentLoaded", function() {
+  var toggleButton = document.getElementById("toggle-menu");
+  var navbar = document.getElementById("navbar");
+
+  toggleButton.addEventListener("click", function() {
+      navbar.style.display = (navbar.style.display === "none" || navbar.style.display === "") ? "block" : "none";
+  });
+});
 
 let questions;
 fetch("questions.json")

@@ -44,6 +44,13 @@ video{
     margin: 0 auto;
     padding: 20px;
 }
+#navbar{
+    display: block;
+}
+.btn{
+    display: none;
+    margin-right: 1rem;
+}
 .navbar {
     height: 3rem;
     display: flex;
@@ -286,20 +293,25 @@ nav {
     transform: translateY(0);
     opacity: 1;
 }
+.open-menu{
+    display: none;
+}
 
 
 
 
-
-@media (max-width: 1400px) {
+@media only screen and (max-width: 1400px) {
     nav {
       
       text-align: center;
       /* padding: 10px; */
-      height: 6.5rem;
+      height:5rem;
     }
     nav .logo{
-        height: 6rem;
+        height: 5rem;
+    }
+    nav h1{
+        font-size:2rem;
     }
     .logo {
         margin-right: 0px;
@@ -328,7 +340,8 @@ nav {
     }
     #round-list li {
         margin: auto;
-    font-size: 20px;
+    font-size: 16px;
+    padding-right: 1rem;
     }
     /* aside{
         top: 118px;
@@ -346,3 +359,37 @@ nav {
         font-size: 25px;
     }
   }
+@media only screen and (max-width: 920px) {
+    .container{
+        display: none;
+    }
+    #question-text{
+        font-size:2rem;
+    }
+    .quiz-container{
+        padding:5px;
+    }
+    .open-menu{
+        display:block;
+    }
+    .menu-style{
+        width:100%;
+        display:flex;
+        flex-direction:row-reverse
+    }
+    .btn{
+        display: block;
+        background-color: transparent;
+        border: none;
+    }
+    #navbar {
+        height: 40vh;
+        display: none;
+    }
+    #round-list{
+        flex-direction: column;
+    }
+    #round-list li{
+        margin-bottom: 10px;
+    }
+}

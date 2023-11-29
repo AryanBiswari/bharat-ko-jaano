@@ -1,5 +1,4 @@
 
-/* Reset default styles */
 body, h1, h2, ul, li, p, button {
     margin: 0;
     padding: 0;
@@ -22,13 +21,7 @@ body {
     flex-direction: column;
 }
 main {
-    flex-grow: 1; /* Content will push the footer to the bottom */
-  }
-.footer {
-    background-color: rgba(0, 0, 0, 0.7);
-    padding: 24px;
-    text-align: center;
-    color:  white;
+    flex-grow: 1; 
   }
 p img{
     height: 20rem;
@@ -44,6 +37,10 @@ video{
     margin: 0 auto;
     padding: 20px;
 }
+nav, .navbar{
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+}
 #navbar{
     display: block;
 }
@@ -55,16 +52,11 @@ video{
     height: 3rem;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    background-color: rgba(0, 0, 0, 0.8); /* Add your preferred background color */ /* Add padding as needed */
-    color: white; /* Add your preferred text color */
+    justify-content: space-around; 
 }
 
 nav {
-    background-color: rgba(0, 0, 0, 0.8);
-    color: white;
     text-align: center;
-    /* padding: 10px 0; */
     display: flex;
     align-items: center;
   }
@@ -81,20 +73,9 @@ nav {
   
   nav p {
     text-align: center;
-    margin-top: -5px; /* Adjust this to fine-tune the spacing */
+    margin-top: -5px; 
     color: #fff;
   }
-
-.sidebar {
-  background-color: rgba(0, 0, 0, 0.7);
-  color: white;
-  width: 188px;
-  padding: 20px;
-  position: absolute;
-  top: 120px;
-  right: 0;
-  height: 82.8vh;
-}
 
 #round-list {
     display: flex;
@@ -129,7 +110,6 @@ nav {
 
 .quiz-container {
     width: 100%;
-    /* max-width: 800px; */
     background-color: white;
     padding: 20px;
     border-radius: 10px;
@@ -184,7 +164,6 @@ nav {
 }
 
 #answer-text {
-    /* margin-top: 30px; */
   text-align: center;
   color: green;
   font-weight: 900;
@@ -235,64 +214,6 @@ nav {
     background-color: #2c3e50;
 }
 
-#copyright-symbol {
-    font-size: 16px;
-    cursor: pointer;
-}
-
-/* Styles for modal */
-.modal {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,0.7);
-    justify-content: center;
-    align-items: center;
-}
-
-.modal-content {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    text-align: center;
-}
-
-.close {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 3rem;
-    cursor: pointer;
-}
-
-
-/* Styles for modal */
-
-
-.close:hover {
-    color: #f00; /* Close button color on hover */
-}
-
-/* Add a modern overlay effect */
-.modal.active {
-    display: flex;
-    opacity: 1;
-}
-
-/* Add animation for modal appearance */
-.modal-content {
-    transform: translateY(-50px);
-    opacity: 0;
-    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
-}
-
-.modal.active .modal-content {
-    transform: translateY(0);
-    opacity: 1;
-}
 .open-menu{
     display: none;
 }
@@ -300,7 +221,7 @@ nav {
 
 
 
-@media only screen and (max-width: 1400px) {
+@media only screen and (max-width: 1440px) {
     nav {
       
       text-align: center;
@@ -308,7 +229,7 @@ nav {
       height:5rem;
     }
     nav .logo{
-        height: 5rem;
+        height: 4rem;
     }
     nav h1{
         font-size:2rem;
@@ -343,14 +264,6 @@ nav {
     font-size: 16px;
     padding-right: 1rem;
     }
-    /* aside{
-        top: 118px;
-    } */
-    /* .sidebar{
-        width: 188px;
-        height: 77.2vh;
-        top: 100px;
-    } */
     
     .dropdown-content{
         max-height: 150px;
@@ -383,7 +296,7 @@ nav {
         border: none;
     }
     #navbar {
-        height: 40vh;
+        height: 28vh;
         display: none;
     }
     #round-list{
@@ -391,6 +304,9 @@ nav {
     }
     #round-list li{
         margin-bottom: 10px;
+    }
+    #answer-text {
+        font-size: 2rem;
     }
     
 }

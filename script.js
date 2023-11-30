@@ -54,14 +54,20 @@ const sidebarRounds = [
   "rajnitiiF",
 ];
 document.addEventListener("DOMContentLoaded", function () {
+ 
   var toggleButton = document.getElementById("toggle-menu");
-  var navbar = document.getElementById("navbar");
+  var menuIcon = document.getElementById("open-menu");
 
   toggleButton.addEventListener("click", function () {
-    navbar.style.display =
-      navbar.style.display === "none" || navbar.style.display === ""
-        ? "block"
-        : "none";
+      var navbar = document.getElementById("navbar");
+      navbar.style.display = (navbar.style.display === "none" || navbar.style.display === "") ? "block" : "none";
+
+      // Dynamically change the image src
+      if (menuIcon) {
+          var currentSrc = menuIcon.getAttribute("src");
+          var newSrc = (currentSrc === "assets/menuIcon.png") ? "assets/closeIcon.png" : "assets/menuIcon.png";
+          menuIcon.setAttribute("src", newSrc);
+      }
   });
 });
 

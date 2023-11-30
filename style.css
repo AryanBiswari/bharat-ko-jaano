@@ -97,6 +97,16 @@ nav {
 #round-list a:hover {
     color: #0cbeeb;
 }
+#previous-question-btn{
+    background-color: #08d4f1;
+    font-size: 20px;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
 
 .txtCenter{
     height: 80vh;

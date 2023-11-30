@@ -4,9 +4,7 @@ const answerText = document.getElementById("answer-text");
 const showAnsBtn = document.getElementById("show-ans-btn");
 const nextQuestionBtn = document.getElementById("next-question-btn");
 const roundList = document.getElementById("round-list");
-const copyrightSymbol = document.getElementById("copyright-symbol");
-const modal = document.getElementById("copyright-modal");
-const closeModal = document.getElementById("close-modal");
+const previousQuestionBtn = document.getElementById("previous-question-btn");
 
 const sidebarRounds = [
   "default",
@@ -55,12 +53,15 @@ const sidebarRounds = [
   "rajnitiiE",
   "rajnitiiF",
 ];
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
   var toggleButton = document.getElementById("toggle-menu");
   var navbar = document.getElementById("navbar");
 
-  toggleButton.addEventListener("click", function() {
-      navbar.style.display = (navbar.style.display === "none" || navbar.style.display === "") ? "block" : "none";
+  toggleButton.addEventListener("click", function () {
+    navbar.style.display =
+      navbar.style.display === "none" || navbar.style.display === ""
+        ? "block"
+        : "none";
   });
 });
 
@@ -135,17 +136,50 @@ fetch("questions.json")
         answerText.classList.add("hidden");
       }
     });
+    // Event listener for moving to the previous question
+    previousQuestionBtn.addEventListener("click", () => {
+      if (currentQuestionIndex > 0) {
+        currentQuestionIndex--;
+        showQuestion(currentQuestionIndex);
+      }
+    });
+
+    document.addEventListener("keydown", function (event) {
+      // Right arrow key
+      if (event.key === "ArrowRight") {
+        if (currentQuestionIndex < currentRoundQuestions.length - 1) {
+          currentQuestionIndex++;
+          showQuestion(currentQuestionIndex);
+        } else {
+          questionText.textContent = "This round has been completed.";
+          answerText.textContent = "";
+          showAnsBtn.textContent = "Show Answer";
+          answerText.classList.add("hidden");
+        }
+      }
+      // Left arrow key
+      else if (event.key === "ArrowDown") {
+        showAnswer();
+      }
+      else if (event.key === "ArrowLeft") {
+        if (currentQuestionIndex > 0) {
+          currentQuestionIndex--;
+          showQuestion(currentQuestionIndex);
+        }}
+    });
 
     roundList.addEventListener("click", (event) => {
       const target = event.target;
-    
+
       if (target.tagName === "A") {
         const roundId = target.getAttribute("href").substring(1);
-    
+
         if (questions && Array.isArray(questions.questions)) {
           // Check if the selected round ID is present in the questions array
-          const validRound = questions.questions.some(q => q.round === roundId);
-    
+          const validRound = questions.questions.some(
+            (q) => q.round === roundId
+          );
+
           if (validRound) {
             currentRoundId = roundId;
             showRoundQuestions(currentRoundId);
@@ -154,7 +188,7 @@ fetch("questions.json")
             console.error(`Invalid round ID: ${roundId}`);
           }
         } else {
-          console.error('Invalid or missing questions array in the JSON file.');
+          console.error("Invalid or missing questions array in the JSON file.");
         }
       }
     });
